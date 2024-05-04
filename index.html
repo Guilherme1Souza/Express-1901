@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playball&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/assets/styles/header.css" />
+    <link rel="stylesheet" href="./src/assets/styles/about.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <img src="./src/assets/images/logo.png" alt="Logo da Expresso 1901" class="header__nav__img"/>
+        <button class="hamburguer"></button>
+
+        <ul class="header__nav__list">
+          <li><a href="#about">QUEM SOMOS</a></li>
+          <li><a href="#menu">CARDÁPIO</a></li>
+          <li><a href="#work">TRABALHE CONOSCO</a></li>
+          <li><a href="#time">HORÁRIO DE FUNCIONAMENTO</a></li>
+          <li><a href="#contact">CONTATO</a></li>
+          <li class="social">
+            ACOMPANHE A <strong>EXPRESSO 1901</strong><br />EM NOSSAS REDES
+            SOCIAIS
+          </li>
+          <a href="https://www.instagram.com/expresso_1901?igsh=dHQ2Z3kxaDM2YWhm">
+            <img src="./src/assets/images/instagram.png" alt="Logo da Expresso 1901" class="header__nav__img__insta"/>
+          </a>
+        </ul>
+      </nav>
+
+      <div class="header_container">
+        <img
+          src="./src/assets/images/coffe_header.png"alt="Logo de café com coração"class="header_container_img"/>
+        <div class="header_container_text">
+          <h1>Cafés especiais <br /><span id="typing-text"></span></h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="about">
+        <div class="about_text">
+          <h2 class="about_title">QUEM SOMOS</h2>
+
+          <p class="about_text1">
+            Em outubro de 2020, a marca Expresso 1901 foi gerada, impulsionada
+            pelo desejo de unir pessoas e proporcionar experiências memoráveis
+            através de nossos cafés especiais.
+          </p>
+
+          <p class="about_text1">
+            Mesmo em meio aos desafios impostos pela pandemia, reinventamos
+            nossa identidade e nos dedicamos a criar um ambiente acolhedor e
+            familiar.
+          </p>
+
+          <p class="about_text1">
+            Nosso compromisso é oferecer a melhor experiência em <br />
+            cada xícara, seja para um café descontraído entre amigos ou para
+            impulsionar a produtividade em seu espaço de coworking.
+          </p>
+        </div>
+
+        <div class="carrossel">
+          <div class="slides">
+            <input class="slides_input" type="radio" name="slide" id="slide1" checked>
+            <input class="slides_input" type="radio" name="slide" id="slide2" >
+            <input class="slides_input" type="radio" name="slide" id="slide3" >
+
+            <div class="slide s1">
+              <img src="./src/assets/images/cadeiras_salao1.png" alt="Espaço de café com 3 mesas e 2 cadeiras" />
+            </div>
+
+            <div class="slide">
+              <img src="./src/assets/images/relogio_salao2.jpg" alt="Relogio histórica em uma parede de tijolinho" />
+            </div>
+
+            <div class="slide">
+              <img src="./src/assets/images/salao_asas3.jpg" alt="Espaço com 3 mesas e uma par de asas desenhada na parede" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slides_nav">
+          <label class="bar" for="slide1"></label>
+          <label class="bar" for="slide2"></label>
+          <label class="bar" for="slide3"></label>
+        </div>
+      </section>
+
+      <!--<section id="menu">
+        <div class="menu_text">
+          <h2 class="menu_title">CARDÁPIO</h2>
+        </div>
+      </section> -->
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
