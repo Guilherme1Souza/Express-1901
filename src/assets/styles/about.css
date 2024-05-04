@@ -8,6 +8,16 @@
   font-size: 62.5%;
 }
 
+.menu-open {
+    overflow: hidden;
+  }
+  
+.menu-open * {
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+
 #about {
   display: flex;
   margin-top: 65.5rem;

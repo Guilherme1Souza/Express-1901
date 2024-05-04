@@ -7,6 +7,7 @@
   font-size: 62.5%;
 }
 
+
 .header {
   background: #ce8f5c;
   height: 150px;
@@ -103,6 +104,7 @@ span {
 }
 
 @media (max-width: 768px) {
+  
   .hamburguer {
     display: block;
     z-index: 1;
@@ -128,7 +130,7 @@ span {
     color: #000;
 
     clip-path: circle(100px at 90% -25%);
-    transition: 1s ease-out;
+    transition: 0.3s ease-out;
 
     flex-direction: column;
     justify-content: space-evenly;
