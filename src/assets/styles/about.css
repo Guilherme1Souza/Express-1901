@@ -25,15 +25,19 @@
   font-family: "Montserrat";
 }
 
-#about, .about_text 
-#menu, .menu_text {
-  margin-left: 10.6rem;
+#about, .about_text  {
+  margin-left: 6.6rem;
+}
+
+#about .about_title {
+    margin-top: 5.5rem;
 }
 
 h2 {
   color: #ce8f5c;
   font-size: 3.6rem;
   font-weight: 500;
+  font-family: "Montserrat";
 }
 
 .about_text1 {
@@ -48,13 +52,6 @@ h2 {
   height: 4.11rem;
 }
 
-#menu {
-  margin-bottom: 0.7rem;
-}
-
-#menu, .menu_title {
-  font-family: "Montserrat";
-}
 
 .carrossel {
   width: 520px;
@@ -63,7 +60,7 @@ h2 {
   overflow: hidden;
   position: absolute;
   left: 72.5rem;
-  top: 80.5rem;
+  top: 82.5rem;
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -74,9 +71,8 @@ h2 {
 
 .slides_nav {
   display: flex;
-  position: absolute;
-  top: 125rem;
-  left: 92.8rem;
+  margin-top: 46.5rem;
+  margin-left: 26.8rem;
 }
 
 .bar {
@@ -97,7 +93,7 @@ input {
     display: none;
 }
 
-.slides {
+.carrossel__slides {
     display: flex;
     width: 300%;
     height: 100%;
@@ -120,147 +116,3 @@ input {
     margin-left: -68%;
 }
 
-@media (max-width: 768px) {
-  #about {
-    max-width: 320px;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about_title,
-  .menu_title {
-    font-size: 20px;
-  }
-
-  #about, .about_text,
-  #menu, .menu_text {
-    margin-left: 16px;
-  }
-
-  .about_text1 {
-    width: 289px;
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-  }
-
-  .carrossel {
-    width: 370px;
-    height: 280px;
-    left: 365px;
-    top: 435px;
-  }
-
-  .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 730px;
-    left: 510px;
-  }
-
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
-
-  
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  #about,
-  .about_text1 {
-    color: #000;
-    font-size: 15px;
-    width: 380px;
-  }
-
-  .carrossel {
-    width: 350px;
-    height: 250px;
-    left: 620px;
-    top: 900px;
-  }
-  .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 1160px;
-    left: 760px;
-  }
-
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
-}
-
-
-@media (min-width: 769px) and (max-width: 884px) {
-  #about,
-  .about_text1 {
-    color: #000;
-    font-size: 15px;
-    width: 350px;
-  }
-  #about {
-    display: flex;
-    margin-top: 405px;
-    font-family: "Montserrat";
-  }
-
-  #about, .about_text, 
-  #menu, .menu_text {
-    margin-left: 12px;
-  }
-
-  .carrossel {
-    width: 370px;
-    height: 280px;
-    left: 405px;
-    top: 680px;
-  }
-  .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 970px;
-    left: 540px;
-  }
-
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 430px) {
-  .carrossel {
-    width: 295px;
-    height: 220px;
-    left: 40px;
-    top: 800px;
-  }
-
-  .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 1050px;
-    left: 145px;
-  }
-
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
-}

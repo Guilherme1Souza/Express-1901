@@ -223,37 +223,3 @@ span {
     top: -7px;
   }
 }
-
-
-@media (min-width: 769px) and (max-width: 1439px) {
-  h1 {
-    font-size: 44px;
-  }
-  .header__nav__list a {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 884px) {
-  h1 {
-    top: 11px;
-    left: 28px;
-    font-size: 36px;
-  }
-}
-
-
-@media  (min-width: 320px) and (max-width: 428px) {
-  header {
-    width: 100%;
-  }
-
-  .header_container_img,
-  img {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-}

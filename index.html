@@ -14,6 +14,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/assets/styles/header.css" />
     <link rel="stylesheet" href="./src/assets/styles/about.css" />
+    <link rel="stylesheet" href="./src/assets/styles/menu.css" />
+    
   </head>
 
   <body>
@@ -73,7 +75,7 @@
         </div>
 
         <div class="carrossel">
-          <div class="slides">
+          <div class="carrossel__slides">
             <input class="slides_input" type="radio" name="slide" id="slide1" checked>
             <input class="slides_input" type="radio" name="slide" id="slide2" >
             <input class="slides_input" type="radio" name="slide" id="slide3" >
@@ -102,6 +104,22 @@
       <section id="menu">
         <div class="menu_text">
           <h2 class="menu_title">CARDÁPIO</h2>
+        </div>
+        <div class="carrossel__two">
+          <button class="arrow-left control" aria-label="previous image"></button>
+          <button class="arrow-right control" aria-label="next image"></button>
+          <div class="carrossel__two__slides">
+            <div class="carrossel_two_slides__Img">
+            <img src="./src/assets/images/salgados.png" alt="Imagem 1" class="item current-item">
+            <img src="./src/assets/images/doces.png" alt="Imagem 2" class="item current-item">
+            <img src="./src/assets/images/bebidas.png" alt="Imagem 3" class="item current-item">
+            <img src="./src/assets/images/açai.png" alt="Imagem 4" class="item current-item">
+            <img src="./src/assets/images/crepes.png" alt="Imagem 4" class="item current-item">
+            <img src="./src/assets/images/almoço.png" alt="Imagem 4" class="item current-item">
+           </div>
+          </div>
+           
+        </div>
         </div>
       </section>
     </main>
