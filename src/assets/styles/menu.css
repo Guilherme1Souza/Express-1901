@@ -65,7 +65,7 @@
 
 .carrossel__two__slides .carrossel_two_slides__img__list .image-item {
     object-fit: cover;
-    height: 185px;
+    height: 189px;
     width: 225px;
 }
 
@@ -136,7 +136,7 @@ p.categoria:nth-child(4) {
 }
 
 p.categoria:nth-child(6) {
-    margin-left: -210px;
+    margin-left: -200px;
 }
 
 p.categoria:nth-child(8) {
@@ -151,8 +151,12 @@ p.categoria:nth-child(12) {
     margin-left: -218px;
 }
 
+p.categoria:nth-child(14) {
+    margin-left: -213px;
+}
+
 .container {
-    margin-top: 52px;
+    margin-top: 45px;
     margin-left: 6.6rem;
 }
 .cardapio {
@@ -161,6 +165,11 @@ p.categoria:nth-child(12) {
     margin: 0 10px;
     justify-content: center;
     align-items: center;
+}
+
+.cardapio__two {
+    font-size: 25px;
+    margin-block: 20px;
 }
 
 .title {
@@ -182,7 +191,16 @@ p.categoria:nth-child(12) {
     color: #000;
     font-family: "Open Sans";
     font-size: 15px;
+    font-weight: 400;
+}
+
+.description__two {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 12px;
     font-weight: 300;
+    line-height: 121.924%;
+    letter-spacing: 0.6px;
 }
 
 .line {
