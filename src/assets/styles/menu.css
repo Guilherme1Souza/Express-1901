@@ -78,7 +78,7 @@
 
 .slider-scrollbar .scrollbar-track {
     height: 2px;
-    width: 86%;
+    width: 100%;
     background-color: #ccc;
     position: relative;
     border-radius: 4px;
