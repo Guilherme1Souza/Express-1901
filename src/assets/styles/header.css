@@ -223,3 +223,53 @@ span {
     top: -7px;
   }
 }
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    h1 {
+      font-size: 50px;
+    }
+    .header__nav__list a {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+      top: 40px;
+      left: 28px;
+      font-size: 55px;
+    }
+
+    .header__nav__list {
+      display: flex;
+      list-style: none;
+
+    }
+    .header__nav__list a {
+      margin-right: 5px;
+      font-size: 12px;
+    }
+  }
+
+  
+  @media  (min-width: 320px) and (max-width: 768px) {
+    header {
+      width: 100%;
+    }
+  
+    .header_container_img,
+    img {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  }
+

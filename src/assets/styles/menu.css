@@ -222,3 +222,10 @@ p.descrition {
     display: flex;
     flex-direction: column;
 }
+
+.observation {
+    display: flex;
+    align-items: center;
+    margin: 2.0rem 0 0 35.5rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.work__hero__img {
+    display: flex;
+    margin-top: 5.5rem;
+    width: 100%;
+}
+
+.work__hero__title {
+    margin-left: 13rem;
+}
+
+h2 {
+    color: #ce8f5c;
+    font-size: 3.6rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+  } 
+  
+.work__text1 {
+    margin-top: 2rem;
+    margin-left: 13rem;
+    font-family: "Open Sans";
+  }
+  
+.work__text1 {
+    color: #000;
+    font-size: 1.8rem;
+
+    width: 716px;
+  }
