@@ -181,14 +181,14 @@ input {
   .carrossel {
     width: 450px;
     height: 350px;
-    left: 700px;
+    left: 720px;
     top: 900px;
   }
   .slides_nav {
     display: flex;
     position: absolute;
-    top: 1160px;
-    left: 760px;
+    top: 800px;
+    left: 640px;
   }
 
   .bar {
@@ -203,7 +203,6 @@ input {
 @media (min-width: 1025px) and (max-width: 1200px)  {
 
   #about {
-    
     display: flex;
     margin-top: 470px;
     font-family: "Montserrat";
@@ -241,7 +240,7 @@ input {
 @media (min-width: 769px) and (max-width: 1024px) {
   #about,
   .about_text1 {
-    
+    color: aqua;
     font-size: 15px;
     width: 450px;
   }
@@ -259,14 +258,14 @@ input {
   .carrossel {
     width: 370px;
     height: 280px;
-    left: 520px;
+    left: 570px;
     top: 720px;
   }
   .slides_nav {
     display: flex;
     position: absolute;
-    top: 970px;
-    left: 540px;
+    top: 550px;
+    left: 460px;
   }
 
   .bar {
