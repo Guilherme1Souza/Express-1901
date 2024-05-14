@@ -229,3 +229,12 @@ p.descrition {
     margin: 2.0rem 0 0 35.5rem;
     font-size: 1.5rem;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px)  {
+    .menu_text {
+    margin-left: -35px;
+    font-size: 20px;
+}
+
+}

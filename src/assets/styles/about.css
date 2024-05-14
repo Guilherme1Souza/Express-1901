@@ -240,7 +240,6 @@ input {
 @media (min-width: 769px) and (max-width: 1024px) {
   #about,
   .about_text1 {
-    color: aqua;
     font-size: 15px;
     width: 450px;
   }
