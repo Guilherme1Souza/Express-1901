@@ -162,22 +162,26 @@ input {
     border: 1px solid #000;
     border-radius: 10px;
   }
-
-
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1201px) {
+  
+  #about {
+    display: flex;
+    margin-top: 600px;
+    font-family: "Montserrat";
+  }
+
   #about,
   .about_text1 {
-    color: #000;
     font-size: 15px;
     width: 380px;
   }
 
   .carrossel {
-    width: 350px;
-    height: 250px;
-    left: 620px;
+    width: 450px;
+    height: 350px;
+    left: 700px;
     top: 900px;
   }
   .slides_nav {
@@ -196,17 +200,54 @@ input {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px)  {
 
-@media (min-width: 769px) and (max-width: 884px) {
+  #about {
+    
+    display: flex;
+    margin-top: 470px;
+    font-family: "Montserrat";
+  }
+
   #about,
   .about_text1 {
-    color: #000;
     font-size: 15px;
-    width: 350px;
+    width: 380px;
+  }
+
+  .carrossel {
+    width: 450px;
+    height: 350px;
+    left: 620px;
+    top: 760px;
+  }
+  .slides_nav {
+    display: flex;
+    position: absolute;
+    top: 1160px;
+    left: 760px;
+  }
+
+  .bar {
+    width: 15px;
+    height: 15px;
+    margin: 6px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about,
+  .about_text1 {
+    
+    font-size: 15px;
+    width: 450px;
   }
   #about {
     display: flex;
-    margin-top: 405px;
+    margin-top: 400px;
     font-family: "Montserrat";
   }
 
@@ -218,8 +259,8 @@ input {
   .carrossel {
     width: 370px;
     height: 280px;
-    left: 405px;
-    top: 680px;
+    left: 520px;
+    top: 720px;
   }
   .slides_nav {
     display: flex;
@@ -237,27 +278,52 @@ input {
   }
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 481px) and (max-width: 768px)  {
+  #about {
+    display: flex;
+    margin-top: 165px;
+  }
+  .about_title {
+    font-size: 32px;
+  }
+  
+  #about,
+  .about_text1 {  
+    font-size: 13px;
+    max-width: 380px;
+  }
+
   .carrossel {
-    width: 295px;
-    height: 220px;
-    left: 40px;
-    top: 800px;
+    width: 345px;
+    height: 300px;
+    top: 480px;
+    left: 400px;
   }
 
   .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 1050px;
-    left: 145px;
+    display: none;
   }
 
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #about,
+  .about_text1 {
+    font-size: 12px;
+    max-width: 320px;
   }
+
+  .carrossel {
+    width: 295px;
+    height: 220px;
+    left: 30px;
+    top: 850px;
+  }
+
+  .slides_nav {
+    display: none;
+  }
+
+    
 }
 

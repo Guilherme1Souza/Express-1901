@@ -224,7 +224,7 @@ span {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   h1 {
     font-size: 60px;
   }
@@ -253,12 +253,12 @@ span {
     }
     .header__nav__list a {
       margin-right: 5px;
-      font-size: 12px;
+      font-size: 11px;
+      line-height: 25px;
     }
   }
-
   
-  @media  (min-width: 320px) and (max-width: 768px) {
+  @media  (min-width: 320px) and (max-width: 480px) {
     header {
       width: 100%;
     }
