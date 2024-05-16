@@ -102,6 +102,8 @@ span {
   font-weight: 400;
 }
 
+
+
 @media (max-width: 768px) {
   
   .hamburguer {
@@ -223,7 +225,24 @@ span {
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+ h1 { font-size: 80px;
+ }
+}
+
+@media (min-width: 1440px) and (max-width: 1559px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
   h1 {
     font-size: 60px;
   }

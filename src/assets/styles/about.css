@@ -70,14 +70,14 @@ h2 {
 }
 
 .slides_nav {
-  display: flex;
+  display: none;
   margin-top: 46.5rem;
   margin-left: 26.8rem;
 }
 
 .bar {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 6px;
   border: 1px solid #000;
   border-radius: 20px;
@@ -164,7 +164,98 @@ input {
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1920px) {
+  #about {
+    display: flex;
+    margin-top: 900px;
+    font-family: "Montserrat";
+    padding-left: 150px;
+    line-height: 40px;
+  }
+
+  .about_title {
+    font-size: 45px;
+  }
+
+  #about,
+  .about_text1 {
+    font-size: 20px;
+    
+  }
+
+  .carrossel {
+    width: 550px;
+    height: 430px;
+    left: 1100px;
+    top: 1180px;
+  }
+
+  .slides_nav {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #about {
+    display: flex;
+    margin-top: 700px;
+    margin-left: 150px;
+    font-family: "Montserrat";
+  }
+
+  .about_title {
+    font-size: 40px;
+  }
+
+  #about,
+  .about_text1 {
+    font-size: 18px;
+    }
+
+  .carrossel {
+    width: 500px;
+    height: 400px;
+    left: 910px;
+    top: 950px;
+  }
+  .slides_nav {
+    display: none;
+    position: absolute;
+    top: 800px;
+    left: 640px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1559px) {
+  #about {
+    display: flex;
+    margin-top: 600px;
+    font-family: "Montserrat";
+  }
+
+  .about_title {
+    font-size: 35px;
+  }
+
+  #about,
+  .about_text1 {
+    font-size: 15px;
+    }
+
+  .carrossel {
+    width: 450px;
+    height: 350px;
+    left: 850px;
+    top: 880px;
+  }
+  .slides_nav {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1439px) {
   
   #about {
     display: flex;
@@ -175,29 +266,19 @@ input {
   #about,
   .about_text1 {
     font-size: 15px;
-    width: 380px;
-  }
+    width: 500px;
+    }
 
   .carrossel {
     width: 450px;
     height: 350px;
-    left: 720px;
-    top: 900px;
+    left: 700px;
+    top: 880px;
   }
   .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 800px;
-    left: 640px;
+    display: none;
   }
 
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px)  {
@@ -221,18 +302,7 @@ input {
     top: 760px;
   }
   .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 1160px;
-    left: 760px;
-  }
-
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
+    display: none;
   }
 }
 
@@ -261,19 +331,9 @@ input {
     top: 720px;
   }
   .slides_nav {
-    display: flex;
-    position: absolute;
-    top: 550px;
-    left: 460px;
-  }
+    display: none;
+}
 
-  .bar {
-    width: 15px;
-    height: 15px;
-    margin: 6px;
-    border: 1px solid #000;
-    border-radius: 10px;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 768px)  {
@@ -288,7 +348,7 @@ input {
   #about,
   .about_text1 {  
     font-size: 13px;
-    max-width: 380px;
+    width: 380px;
   }
 
   .carrossel {
@@ -301,18 +361,13 @@ input {
   .slides_nav {
     display: none;
   }
-
 }
 
+
 @media (min-width: 320px) and (max-width: 480px) {
-    #about,
-  .about_text1 {
-    font-size: 12px;
-    max-width: 320px;
-  }
 
   .carrossel {
-    width: 295px;
+    width: 275px;
     height: 220px;
     left: 30px;
     top: 850px;
@@ -321,7 +376,4 @@ input {
   .slides_nav {
     display: none;
   }
-
-    
 }
-
