@@ -444,13 +444,11 @@ p.descrition {
 
       .carrossel__two__slides .slide-button#prev-slide {
           position: absolute;
-          margin-top: -250px;
           margin-left: -50px;
       }
   
       .carrossel__two__slides .slide-button#next-slide {
           position: absolute;
-          margin-top: -250px;
       }
 
       .carrossel__two__slides .carrossel_two_slides__img__list {
@@ -483,15 +481,217 @@ p.descrition {
         margin-right: -96px;
         font-size: 15px;
     }
+}
 
+    @media (min-width: 481px) and (max-width: 768px) {
 
-  }
+        #menu {
+            margin-top: 550px;
+        }
+        .menu_title {
+            margin-left: -100px;
+            font-size: 32px;
+        }
+    
+        .carrossel__two {
+            margin-left: -150px;
+        }
+
+        .slide-button {
+            width: 20px;
+        }
+    
+          .carrossel__two__slides .slide-button#prev-slide {
+              position: absolute;
+              margin-top: -1350px;
+              margin-left: -100px;
+            
+          }
+          
+          .carrossel__two__slides .slide-button#next-slide {
+              position: absolute;
+              margin-top: -1350px;
+              margin-right: -80px;
+          }
+    
+          .carrossel__two__slides .carrossel_two_slides__img__list {
+            width: 620px;
+          }
+    
+          .slider-scrollbar .scrollbar-track {
+            display: none;
+        }
+
+        .cardapio {
+            margin-left: -100px;
+
+        }
+    
+        .description__two1 {
+            color: #000;
+            font-size: 15px;
+            font-family: "Open Sans";
+            font-weight: 400;
+            line-height: 121.924%;
+            letter-spacing: 0.6px;
+        }
+
+        .description__two {
+            width: 500px;
+        }
+    
+
+        .valor {
+            margin-right: 30px;
+            
+        }
+
+        .valor2 {
+            color: #000;
+            float: right;
+            margin-right: -190px;
+            font-size: 15px;
+        }
+    
+        .observation {
+            margin-left: 150px;
+        }
+    }
+
 
     @media (min-width: 320px) and (max-width: 480px)  {
     .menu_text {
     margin-left: -35px;
     font-size: 20px;
 }
+#menu {
+    margin-top: 550px;
+}
+.menu_title {
+    font-size: 22px;
+}
 
+.carrossel__two {
+    width: 20px;
+    margin-left: -200px;
+}
+
+  .carrossel__two__slides .slide-button#prev-slide {
+      position: absolute;
+      margin-top: -320px;
+      margin-left: -120px;
+  }
+
+  .carrossel__two__slides .slide-button#next-slide {
+      position: absolute;
+      margin-top: -320px;
+      margin-right: -60px;
+  }
+
+  .carrossel__two__slides .slide-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carrossel__two__slides .carrossel_two_slides__img__list {
+    width: 250px;
+    height: 120px;
+    gap: 20px;
+  }
+
+  .categoria {
+    margin-top: 100px;
+    color: #3E3C3C;
+    font-size: 15px;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+
+
+p.categoria:nth-child(2) {
+    margin-left: -105px;
+    margin-top: 85px;
+}
+
+p.categoria:nth-child(4) {
+    margin-left: -90px;
+    margin-top: 85px;
+}
+
+p.categoria:nth-child(6) {
+    margin-left: -90px;
+    margin-top: 85px;
+}
+
+p.categoria:nth-child(8) {
+    margin-left: -85px;
+    margin-top: 85px;
+
+}
+
+p.categoria:nth-child(10) {
+    margin-left: -95px;
+    margin-top: 85px;
+}
+
+p.categoria:nth-child(12) {
+    margin-left: -102px;
+    margin-top: 85px;
+}
+
+p.categoria:nth-child(14) {
+    margin-left: -102px;
+    margin-top: 85px;
+}
+
+
+.carrossel__two__slides .carrossel_two_slides__img__list .image-item {
+    background-size: auto;
+    width: 95px;
+    height: 80px;
+}
+
+.cardapio .title {
+    font-size: 13px;
+}
+
+.cardapio {
+    margin-left: -120px;
+
+}
+
+.description__two1 {
+    color: #000;
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 121.924%;
+    letter-spacing: 0.6px;
+    width: 300px;
+}
+
+.description__two {
+    width: 200px;
+    font-size: 12px;
+}
+
+
+.valor {
+    margin-right: 30px;
+    font-size: 12px;
+    
+}
+
+.valor2 {
+    color: #000;
+    float: right;
+    margin-right: -120px;
+    font-size: 12px;
+}
+
+.observation {
+    margin-left: 10px;
+    font-size: 12px;
+}
 
 }

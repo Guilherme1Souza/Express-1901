@@ -33,3 +33,15 @@ h2 {
 
     width: 716px;
   }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .work {
+      margin-right: 110px;
+    }
+    .work__text1 {
+      width: 220px;
+      font-size: 12px;
+    }
+  }
