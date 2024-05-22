@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  
