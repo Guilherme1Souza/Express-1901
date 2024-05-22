@@ -1,49 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 87.8px);
-    grid-template-rows: repeat(4, 185px);
-    height: 20px;
-    gap: 250px;
-    
-}
+    grid-template-areas:
+      "gallery_one gallery_three gallery_two"
+      ". gallery_three ."
+      "gallery_four gallery_three gallery_five";
+    gap: 15px;
+  }
 
-.gallery > .gallery_one {
-    grid-column: 1/2;
+  .gallery > .gallery_one {
+    grid-area: gallery_one;
     width: 332px;
-height: 409px;
-flex-shrink: 0;
-}
+    height: 409px;
+  }
 
-.gallery > .gallery_two {
-    grid-column: 4/5;
+  .gallery > .gallery_two {
+    grid-area: gallery_two;
     width: 335px;
     height: 409px;
-    flex-shrink: 0;
-}
+  }
 
-.gallery > .gallery_three {
-    grid-column: 2/3;
-    grid-row: 1/5;
+  .gallery > .gallery_three {
+    grid-area: gallery_three;
     width: 650px;
     height: 844px;
-    margin-left: 10px;
-}
+  }
 
-.gallery > .gallery_four {
- grid-column: 1/2;
- width: 332px;
- height: 409px;
- flex-shrink: 0;
- 
-}
+  .gallery > .gallery_four {
+    grid-area: gallery_four;
+    width: 332px;
+    height: 409px;
+  }
 
-.gallery > .gallery_five {
-    grid-column: 4/5;
+  .gallery > .gallery_five {
+    grid-area: gallery_five;
     width: 335px;
     height: 409px;
-    flex-shrink: 0;
+  }
+
+@media (min-width: 320px) and (max-width: 480px) {
+        .gallery {
+            grid-template-areas:
+              "gallery_one gallery_two"
+              " gallery_four gallery_three gallery_five";
+            grid-template-columns: 2, 1fr;
+            grid-template-rows: repeat(4, 85px);
+            gap: 15px;
+
+      }
+
+      .gallery > .gallery_one {
+        grid-area: gallery_one;
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery > .gallery_two {
+        grid-area: gallery_two;
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery > .gallery_three {
+        grid-area: gallery_three;
+        margin-top: 95px;
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery > .gallery_four {
+        grid-area: gallery_four;
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery > .gallery_five {
+        grid-area: gallery_five;
+        width: 100%;
+        height: auto;
+      }
 }
