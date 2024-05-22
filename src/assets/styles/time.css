@@ -1,82 +1,155 @@
 
 .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 15px;
-  }
+  display: grid;
+  grid-template-areas:
+    "gallery_one gallery_three gallery_two"
+    ". gallery_three ."
+    "gallery_four gallery_three gallery_five";
+  gap: 15px;
+}
+
+.gallery > .gallery_one {
+  grid-area: gallery_one;
+  width: 332px;
+  height: 409px;
+}
+
+.gallery > .gallery_two {
+  grid-area: gallery_two;
+  width: 335px;
+  height: 409px;
+}
+
+.gallery > .gallery_three {
+  grid-area: gallery_three;
+  width: 650px;
+  height: 844px;
+}
+
+.gallery > .gallery_four {
+  grid-area: gallery_four;
+  width: 332px;
+  height: 409px;
+}
+
+.gallery > .gallery_five {
+  grid-area: gallery_five;
+  width: 335px;
+  height: 409px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery > .gallery_one {
+      grid-area: gallery_one;
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery > .gallery_two {
+      grid-area: gallery_two;
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery > .gallery_three {
+      grid-area: gallery_three;
+      width: 100%;
+      height: 847px;
+    }
+
+    .gallery > .gallery_four {
+      grid-area: gallery_four;
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery > .gallery_five {
+      grid-area: gallery_five;
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .gallery {
+      display: grid;
+      grid-template-areas:
+        "gallery_one gallery_three gallery_two"
+        ". gallery_three ."
+        "gallery_four gallery_three gallery_five";
+      gap: 15px;
+    }
 
   .gallery > .gallery_one {
-    grid-area: gallery_one;
-    width: 332px;
-    height: 409px;
-  }
+      grid-area: gallery_one;
+      width: 100%;
+      height: auto;
+    }
 
-  .gallery > .gallery_two {
-    grid-area: gallery_two;
-    width: 335px;
-    height: 409px;
-  }
+    .gallery > .gallery_two {
+      grid-area: gallery_two;
+      width: 100%;
+      height: auto;
+    }
 
-  .gallery > .gallery_three {
-    grid-area: gallery_three;
-    width: 650px;
-    height: 844px;
-  }
+    .gallery > .gallery_three {
+      grid-area: gallery_three;
+      width: 100%;
+      height: 637px;
+    }
 
-  .gallery > .gallery_four {
-    grid-area: gallery_four;
-    width: 332px;
-    height: 409px;
-  }
+    .gallery > .gallery_four {
+      grid-area: gallery_four;
+      width: 100%;
+      height: auto;
+    }
 
-  .gallery > .gallery_five {
-    grid-area: gallery_five;
-    width: 335px;
-    height: 409px;
-  }
+    .gallery > .gallery_five {
+      grid-area: gallery_five;
+      width: 100%;
+      height: auto;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
-        .gallery {
-            grid-template-areas:
-              "gallery_one gallery_two"
-              " gallery_four gallery_three gallery_five";
-            grid-template-columns: 2, 1fr;
-            grid-template-rows: repeat(4, 85px);
-            gap: 15px;
+      .gallery {
+          grid-template-areas:
+            "gallery_one gallery_two"
+            " gallery_four gallery_three gallery_five";
+          grid-template-columns: 2, 1fr;
+          grid-template-rows: repeat(4, 85px);
+          gap: 15px;
 
-      }
+    }
 
-      .gallery > .gallery_one {
-        grid-area: gallery_one;
-        width: 100%;
-        height: auto;
-      }
+    .gallery > .gallery_one {
+      grid-area: gallery_one;
+      width: 100%;
+      height: auto;
+    }
 
-      .gallery > .gallery_two {
-        grid-area: gallery_two;
-        width: 100%;
-        height: auto;
-      }
+    .gallery > .gallery_two {
+      grid-area: gallery_two;
+      width: 100%;
+      height: auto;
+    }
 
-      .gallery > .gallery_three {
-        grid-area: gallery_three;
-        margin-top: 95px;
-        width: 100%;
-        height: auto;
-      }
+    .gallery > .gallery_three {
+      grid-area: gallery_three;
+      margin-top: 95px;
+      width: 100%;
+      height: auto;
+    }
 
-      .gallery > .gallery_four {
-        grid-area: gallery_four;
-        width: 100%;
-        height: auto;
-      }
+    .gallery > .gallery_four {
+      grid-area: gallery_four;
+      width: 100%;
+      height: auto;
+    }
 
-      .gallery > .gallery_five {
-        grid-area: gallery_five;
-        width: 100%;
-        height: auto;
-      }
+    .gallery > .gallery_five {
+      grid-area: gallery_five;
+      width: 100%;
+      height: auto;
+    }
 }

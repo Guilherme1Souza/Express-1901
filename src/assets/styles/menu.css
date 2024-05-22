@@ -588,13 +588,15 @@ p.descrition {
 }
 
   .carrossel__two__slides .slide-button#prev-slide {
-      margin-top: -200px;
+    position: absolute;
+      margin-top: -660px;
       margin-left: -80px;
   }
 
   .carrossel__two__slides .slide-button#next-slide {
-      margin-top: -200px;
-      margin-right: 55px;
+    position: absolute;
+    margin-top: -660px;
+    margin-right: 55px;
   }
 
   .carrossel__two__slides .slide-button {

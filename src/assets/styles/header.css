@@ -278,11 +278,10 @@ span {
   
   @media  (min-width: 320px) and (max-width: 480px) {
     header {
-      width: 100%;
+      max-width: 480px;
     }
   
-    .header_container_img,
-    img {
+    .header_container_img {
       width: 100%;
     }
   
