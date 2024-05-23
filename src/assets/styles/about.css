@@ -230,7 +230,7 @@ input {
 @media (min-width: 1440px) and (max-width: 1559px) {
   #about {
     display: flex;
-    margin-top: 600px;
+    margin-top: 630px;
     font-family: "Montserrat";
   }
 
@@ -306,17 +306,39 @@ input {
   }
 }
 
-
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 901px) and (max-width: 1024px) {
+  #about {
+    margin-top: 450px;
+  }
+  
   #about,
   .about_text1 {
     font-size: 15px;
-    width: 450px;
+    width: 350px;
+  }
+
+  .carrossel {
+    width: 330px;
+    height: 300px;
+    left: 520px;
+    top: 770px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 900px) {
+  
+  #about,
+  .about_text1 {
+    font-size: 15px;
+    width: 330px;
+    
   }
   #about {
     display: flex;
     margin-top: 400px;
     font-family: "Montserrat";
+    
   }
 
   #about, .about_text, 
@@ -327,7 +349,7 @@ input {
   .carrossel {
     width: 370px;
     height: 280px;
-    left: 570px;
+    left: 400px;
     top: 720px;
   }
   .slides_nav {

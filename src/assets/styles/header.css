@@ -102,8 +102,6 @@ span {
   font-weight: 400;
 }
 
-
-
 @media (max-width: 768px) {
   
   .hamburguer {
@@ -256,12 +254,16 @@ span {
       font-size: 12px;
     }
   }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
+
+  @media (min-width: 901px) and (max-width: 1024px) {
+    header {
+      width: 100%;
+    }
+
     h1 {
       top: 40px;
       left: 28px;
-      font-size: 55px;
+      font-size: 40px;
     }
 
     .header__nav__list {
@@ -270,8 +272,29 @@ span {
 
     }
     .header__nav__list a {
-      margin-right: 5px;
       font-size: 11px;
+      line-height: 25px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 900px) {
+    header {
+      width: 100%;
+    }
+
+    h1 {
+      top: 40px;
+      left: 28px;
+      font-size: 40px;
+    }
+
+    .header__nav__list {
+      display: flex;
+      list-style: none;
+
+    }
+    .header__nav__list a {
+      font-size: 8px;
       line-height: 25px;
     }
   }
