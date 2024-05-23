@@ -850,7 +850,7 @@ p.descrition {
 
 .carrossel__two {
     width: 20px;
-    margin-left: -190px;
+    margin-left: -208px;
 }
 
   .carrossel__two__slides .slide-button#prev-slide {
@@ -871,8 +871,8 @@ p.descrition {
   }
 
   .carrossel__two__slides .carrossel_two_slides__img__list {
-    width: 250px;
-    height: 120px;
+    width: 300px;
+    height: 190px;
     gap: 20px;
   }
 
@@ -886,55 +886,57 @@ p.descrition {
 
 
 p.categoria:nth-child(2) {
-    margin-left: -105px;
-    margin-top: 85px;
+    margin-left: -125px;
+    margin-top: 140px;
 }
 
 p.categoria:nth-child(4) {
-    margin-left: -90px;
-    margin-top: 85px;
+    margin-left: -120px;
+    margin-top: 140px;
 }
 
 p.categoria:nth-child(6) {
-    margin-left: -90px;
-    margin-top: 85px;
+    margin-left: -120px;
+    margin-top: 140px;
 }
 
 p.categoria:nth-child(8) {
-    margin-left: -85px;
-    margin-top: 85px;
+    margin-left: -110px;
+    margin-top: 140px;
 
 }
 
 p.categoria:nth-child(10) {
-    margin-left: -95px;
-    margin-top: 85px;
+    margin-left: -125px;
+    margin-top: 140px;
 }
 
 p.categoria:nth-child(12) {
-    margin-left: -102px;
-    margin-top: 85px;
+    margin-left: -130px;
+    margin-top: 140px;
 }
 
 p.categoria:nth-child(14) {
-    margin-left: -102px;
-    margin-top: 85px;
+    margin-left: -125px;
+    margin-top: 140px;
 }
 
 
 .carrossel__two__slides .carrossel_two_slides__img__list .image-item {
     background-size: auto;
-    width: 95px;
-    height: 80px;
+    width: 150px;
+    height: 125px;
+    gap: 12px;
 }
 
 .slider-scrollbar .scrollbar-thumb {
-    width: 20%;
+    width: 15%;
   }
 
   .carrossel__two .slider-scrollbar {
-    margin-left: 110px;
-    width: 240px;
+    margin-left: 65px;
+    margin-top: 10px;
+    width: 410px;
   }
 
   .slider-scrollbar .scrollbar-track {
