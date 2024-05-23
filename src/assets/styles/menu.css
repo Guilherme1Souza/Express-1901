@@ -741,7 +741,7 @@ p.descrition {
     
           .carrossel__two__slides .carrossel_two_slides__img__list {
             width: 600px;
-            gap: 20px;
+            gap: 18px;
           }
 
           .carrossel__two__slides .carrossel_two_slides__img__list .image-item {
@@ -754,7 +754,7 @@ p.descrition {
           }
 
           .carrossel__two .slider-scrollbar {
-            margin-left: 80px;
+            margin-left: 40px;
             width: 638px;
           }
     
@@ -940,7 +940,7 @@ p.categoria:nth-child(14) {
   }
 
   .slider-scrollbar .scrollbar-track {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-left: 110px;
