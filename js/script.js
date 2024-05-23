@@ -91,68 +91,70 @@ setInterval(function () {
 }, 2000);
 
 //carrossel_two 
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
 
-const initSlider = () => {
-  const carrosselTwoSlidesImgList = document.querySelector('.carrossel__two__slides .carrossel_two_slides__img__list');
-  const slideButtons = document.querySelectorAll('.carrossel__two__slides .slide-button');
-  const sliderScrollbar = document.querySelector('.carrossel__two .slider-scrollbar');
-  const scrollbarThumb = sliderScrollbar.querySelector('.scrollbar-thumb');
-  const maxScrollLeft = carrosselTwoSlidesImgList.scrollWidth - carrosselTwoSlidesImgList.clientWidth;
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
-  scrollbarThumb.addEventListener('mousedown', (e) => {
-    const startX = e.clientX;
-    const thumbPosition = scrollbarThumb.offsetLeft;
-
-    const handleMouseMove = (e) => {
-    const deltaX = e.clientX -  startX;
-    const newThumbPosition = thumbPosition + deltaX;
-    const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-
-
-    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
-    const scrollPosition = (boundedPosition / maxThumbPosition ) * maxScrollLeft;
-    
-    
-    scrollbarThumb.style.left = `${boundedPosition}px`;
-    carrosselTwoSlidesImgList.scrollLeft = scrollPosition;
-    }
-
-    const handleMouseUp = () => { 
-    document.removeEventListener("mousemove", handleMouseMove);
-    document.removeEventListener("mouseup", handleMouseUp);
-    }
-
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
-  });
-
-    slideButtons.forEach(button => {
-      button.addEventListener('click', () => {
-       const direction = button.id === "prev-slide" ? -1 : 1;
-       const scrollAmount = carrosselTwoSlidesImgList.clientWidth * direction;
-       carrosselTwoSlidesImgList.scrollBy({ left: scrollAmount, behavior: "smooth"});
-    });
-  });
-
-  const handeSlideButton = () => {
-    slideButtons[0].style.display = carrosselTwoSlidesImgList.scrollLeft <= 0 ? "none" : "block";
-    slideButtons[1].style.display = carrosselTwoSlidesImgList.scrollLeft >= maxScrollLeft ? "none" : "block";
-  }
-
-  const updateScrollThumbPosition = () => {
-    const scrollPosition = carrosselTwoSlidesImgList.scrollLeft;
-    const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-    scrollbarThumb.style.left = `${thumbPosition}px`;
-  }
+const showHideIcons = () => {
   
-  carrosselTwoSlidesImgList.addEventListener("scroll", () => {
-    handeSlideButton();
-    updateScrollThumbPosition();
-    });
-
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; 
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
-window.addEventListener("load", initSlider);
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; 
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); 
+    });
+});
+
+
+const autoSlide = () => {
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    positionDiff = Math.abs(positionDiff); 
+    let firstImgWidth = firstImg.clientWidth + 14;
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carousel.scrollLeft > prevScrollLeft) { 
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("arrastando");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carrossel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStop = () => {
+    isDragStart = falso;
+    carousel.classList.remove("arrastando");
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carrossel.addEventListener("mousedown", dragStart);
+carrossel.addEventListener("touchstart", dragStart);
+document.addEventListener("mousemove", arrastando);
+carousel.addEventListener("touchmove", arrastando);
+document.addEventListener("mouseup", dragStop);
+carrossel.addEventListener("touchend", dragStop);
 
 
 //show me categorys 
