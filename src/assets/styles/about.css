@@ -199,8 +199,8 @@ input {
 @media (min-width: 1600px) and (max-width: 1919px) {
   #about {
     display: flex;
-    margin-top: 700px;
-    margin-left: 150px;
+    margin-top: 800px;
+    margin-left: 200px;
     font-family: "Montserrat";
   }
 
@@ -217,7 +217,7 @@ input {
     width: 500px;
     height: 400px;
     left: 910px;
-    top: 950px;
+    top: 1050px;
   }
   .slides_nav {
     display: none;
@@ -296,7 +296,7 @@ input {
   }
 
   .carrossel {
-    width: 450px;
+    width: 400px;
     height: 350px;
     left: 620px;
     top: 760px;
@@ -386,6 +386,12 @@ input {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  #about,
+  .about_text1 {  
+    font-size: 13px;
+    width: 300px;
+  }
 
   .carrossel {
     width: 275px;

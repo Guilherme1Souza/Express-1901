@@ -122,21 +122,73 @@ h2 {
   transform: translateX(178px) skewX(30deg);
 }
 
+@media (min-width:1920px) {
+  #work {
+    margin-top: 50px;
+    margin-bottom: 350px;
+  }
+
+  .work__hero__title {
+    margin-left: 285px;
+    font-size: 45px;
+  }
+
+  .work__text1 {
+    margin-left: 285px;
+    width: 1020px;
+    font-size: 26px;
+  }
+
+  .work__hero__img {
+    width: 100%;
+  }
+
+  .curriculo {
+    margin-left: 300px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #work {
+    margin-top: 50px;
+    margin-bottom: 350px;
+  }
+
+  .work__hero__title {
+    margin-left: 220px;
+    font-size: 45px;
+  }
+
+  .work__text1 {
+    margin-left: 220px;
+    width: 820px;
+    font-size: 15px;
+  }
+
+  .work__hero__img {
+    width: 100%;
+  }
+
+  .curriculo {
+    margin-left: 250px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
+
 @media (min-width: 1440px) and (max-width: 1559px) {
 
   #work {
     margin-top: 50px;
     margin-bottom: 350px;
   }
-  .work__hero__title {
-    margin-left: 290px;
-  }
-  .work__text1 {
-    margin-left: 290px;
-  }
-  .curriculo {
-    margin-left: 290px;
-  }
+
   .btn {
     font-size: 13px;
   }
@@ -164,7 +216,38 @@ h2 {
 
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+ 
+}  
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .work__text1 {
+    width: 520px;
+    font-size: 12px;
+  }
+
+  .work__hero__img {
+    display: flex;
+    margin-top: 5.5rem;
+    width: 100%;
+  }
+
+  .curriculo {
+    margin-top: 35px;
+  }
+
+  .btn {
+    font-size: 9.5px;
+    padding-left: 49px;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 900px) {
+  
+  .work__hero__title {
+    margin-left: 30px;
+  }
+  
   .work__text1 {
     width: 520px;
     font-size: 12px;
@@ -174,7 +257,17 @@ h2 {
   .work__hero__img {
     display: flex;
     margin-top: 5.5rem;
-    max-width: 900px;
+    width: 100%;
+  }
+
+  .curriculo {
+    margin-left: 40px;
+    margin-top: 35px;
+  }
+
+  .btn {
+    font-size: 9.5px;
+    padding-left: 49px;
   }
 }
 
@@ -184,14 +277,25 @@ h2 {
     margin-left: 30px;
   }
   .work__text1 {
-    width: 520px;
+    width: 540px;
     font-size: 12px;
     margin-left: 30px;
+  }
+
+  .work__hero__img {
+    display: flex;
+    margin-top: 5.5rem;
+    width: 100%;
   }
 
   .curriculo {
     margin-left: 40px;
     margin-top: 35px;
+  }
+
+  .btn {
+    font-size: 9px;
+    padding-left: 49px;
   }
 }
 
@@ -207,6 +311,10 @@ h2 {
     font-size: 12px;
     margin-left: 30px;
     margin-top: 35px;
+  }
+
+  .work__hero__img {
+    width: 100%;
   }
 
   .curriculo {
