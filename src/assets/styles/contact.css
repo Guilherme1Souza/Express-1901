@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.contact_title {
+    color: #CE8F5C;
+    font-family: "Montserrat";
+    color: #ce8f5c;
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-left: 13rem;
+}
+
+.contact__text {
+  display: flex;
+  gap: 12.8rem;
+  padding: 14rem;
+}
+
+.contact__text1 {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  width: 54.9rem;
+}
+
+.contact__img {
+  width: 50px;
+  height: 50px;
+}
+
+.contact__subtitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+  gap: 45px;
+}
+
+.contact__text2 {
+  display: flex;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.contact__email {
+  color: #000;
+  text-align: center;
+  padding-left: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-decoration-line: underline;
+}
+
+.contact__number {
+  color: #000;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1920px) {
+    .contact_title {
+        font-size: 45px;
+        margin-left: 285px;
+        margin-top: 280px; 
+        
+      }
+
+      .contact__text {
+        display: flex;
+        margin-left: 180px;
+        justify-content: space-around;
+        padding-left: 5px;
+      }
+
+      .contact__text1 {
+        display: flex;
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 45px;
+        margin-top: 15px;
+        width: 680px;
+      }
+
+      .contact__subtitle {
+        margin-top: 70px;
+      }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .contact_title {
+        font-size: 45px;
+        margin-left: 220px;
+        margin-top: 35px;
+        
+      }
+
+      .contact__text {
+        display: flex;
+        padding: 30px;
+        margin-left: 220px;
+        justify-content: space-around;
+      }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-left: 130px;
+      }
+
+      .contact_title {
+        font-size: 36px;
+        margin-left: 130px;
+        margin-top: 35px;
+      }
+
+      .contact__text1 {
+        display: flex;
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 35px;
+        margin-top: 15px;
+        width: 500px;
+      }
+
+      .contact__subtitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2px;
+        gap: 45px;
+      }
+
+      .contact__email {
+        color: #000;
+        text-align: center;
+        font-weight: 300;
+        text-decoration-line: underline;
+      }
+      
+      .contact__number {
+        color: #000;
+        text-align: center;
+        font-weight: 300;
+      }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .contact_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 35px;
+      }
+
+      .contact__text1 {
+        display: flex;
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 35px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 45px;
+        width: 500px;
+
+      }
+
+      .contact__subtitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2px;
+        margin-left: 45px;
+        gap: 45px;
+      }
+
+      .contact__email {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration-line: underline;
+        margin-top: 15px;
+      }
+      
+      .contact__number {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 15px;
+        
+      }
+}
+
+@media (min-width: 481px) and (max-width: 768px)  {
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .contact_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 35px;
+      }
+
+      .contact__text1 {
+        display: flex;
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 35px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 45px;
+        width: 500px;
+
+      }
+
+      .contact__subtitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2px;
+        margin-left: 45px;
+        gap: 45px;
+      }
+
+      .contact__email {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration-line: underline;
+        margin-top: 15px;
+      }
+      
+      .contact__number {
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 15px;
+        
+      }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {    
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .contact_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 50px;
+      }
+
+      .contact__text1 {
+        color: #000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 3.5rem;
+        margin-top: 15px;
+        width: 300px;
+
+      }
+
+      .contact__subtitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2px;
+        gap: 45px;
+        width: 320px;
+      }
+
+      .contact__email {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration-line: underline;
+        margin-top: 15px;
+      }
+      
+      .contact__number {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 15px;
+        
+      }
+      
+}

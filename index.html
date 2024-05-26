@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="./src/assets/styles/menu.css" />
   <link rel="stylesheet" href="./src/assets/styles/work.css" />
   <link rel="stylesheet" href="./src/assets/styles/time.css" />
+  <link rel="stylesheet" href="./src/assets/styles/gallery.css">
+  <link rel="stylesheet" href="./src/assets/styles/contact.css">
 
   <script src="./js/script.js" defer></script>
 </head>
@@ -115,21 +117,28 @@
       <div class="wrapper">
         <i id="left" class="fa-solid fa-angle-left"></i>
         <div class="carousel">
-          <img src="./src/assets/images/salgados.png"  onclick="mostrarCategoria('salgados')"  class="image-item" alt="Imagem 1" draggable="false" />
-          <img src="./src/assets/images/doces.png" onclick="mostrarCategoria('doces')" class="image-item" alt="Imagem 2"  draggable="false">
-          <img src="./src/assets/images/bebidas.png" onclick="mostrarCategoria('cafés')" class="image-item" alt="Imagem 3"   draggable="false">
-          <img src="./src/assets/images/açai.png" onclick="mostrarCategoria('açai')"  class="image-item" alt="Imagem 4" draggable="false">
-          <img src="./src/assets/images/crepes.png" onclick="mostrarCategoria('crepes')" class="image-item" alt="Imagem 5" draggable="false">
-          <img src="./src/assets/images/almoço.png" onclick="mostrarCategoria('almoços')"  class="image-item" alt="Imagem 6"  draggable="false">  
-          <img src="./src/assets/images/bebidas_2.png" onclick="mostrarCategoria('bebidas')" class="image-item" alt="Imagem 6"  draggable="false">   
+          <img src="./src/assets/images/salgados.png" onclick="mostrarCategoria('salgados')" class="image-item"
+            alt="Imagem 1" draggable="false" />
+          <img src="./src/assets/images/doces.png" onclick="mostrarCategoria('doces')" class="image-item" alt="Imagem 2"
+            draggable="false">
+          <img src="./src/assets/images/bebidas.png" onclick="mostrarCategoria('cafés')" class="image-item"
+            alt="Imagem 3" draggable="false">
+          <img src="./src/assets/images/açai.png" onclick="mostrarCategoria('açai')" class="image-item" alt="Imagem 4"
+            draggable="false">
+          <img src="./src/assets/images/crepes.png" onclick="mostrarCategoria('crepes')" class="image-item"
+            alt="Imagem 5" draggable="false">
+          <img src="./src/assets/images/almoço.png" onclick="mostrarCategoria('almoços')" class="image-item"
+            alt="Imagem 6" draggable="false">
+          <img src="./src/assets/images/bebidas_2.png" onclick="mostrarCategoria('bebidas')" class="image-item"
+            alt="Imagem 6" draggable="false">
           <div class="categoria">
-            <p class="categoria2"  onclick="mostrarCategoria('salgados')" >Salgados </p>
+            <p class="categoria2" onclick="mostrarCategoria('salgados')">Salgados </p>
             <p class="categoria2" onclick="mostrarCategoria('doces')">Doces</p>
             <p class="categoria2" onclick="mostrarCategoria('cafés')">Cafés</p>
-            <p class="categoria2"  onclick="mostrarCategoria('açai')">Açai</p>
-            <p class="categoria2"  onclick="mostrarCategoria('crepes')">Crepes</p>
-            <p class="categoria2"  onclick="mostrarCategoria('almoços')">Almoços</p>
-            <p class="categoria2"  onclick="mostrarCategoria('bebidas')">Bebidas</p>
+            <p class="categoria2" onclick="mostrarCategoria('açai')">Açai</p>
+            <p class="categoria2" onclick="mostrarCategoria('crepes')">Crepes</p>
+            <p class="categoria2" onclick="mostrarCategoria('almoços')">Almoços</p>
+            <p class="categoria2" onclick="mostrarCategoria('bebidas')">Bebidas</p>
           </div>
         </div>
         <i id="right" class="fa-solid fa-angle-right"></i>
@@ -914,7 +923,7 @@
       </div>
     </section>
 
-  <section id="work">
+    <section id="work">
       <div class="work__hero">
         <img src="./src/assets/images/onda.png" alt="figura de uma onda marrom" class="work__hero__img">
       </div>
@@ -928,22 +937,64 @@
         <p class="work__text1">Junte-se a nós e faça parte da experiência única que é a Café Expresso 1901. </p>
       </div>
       <div class="curriculo">
-        <a href="mailto:Expresso 1901 vagasexpresso1901@outlook.com " class="btn">Enviar seu CV<span><i class="fa-solid fa-arrow-right"></i></span>
+        <a href="mailto:Expresso 1901 vagasexpresso1901@outlook.com " class="btn">Enviar seu CV<span><i
+              class="fa-solid fa-arrow-right"></i></span>
         </a>
       </div>
     </section>
 
-  <section id="time">
-
-      <div class="gallery">
+    <div class="gallery">
       <img src="./src/assets/images/gallery_one.png" alt="" class="gallery_one">
       <img src="./src/assets/images/gallery_two.png" alt="" class="gallery_two">
       <img src="./src/assets/images/gallery_three.png" alt="" class="gallery_three">
-      <img src="./src/assets/images/gallery_four.png" alt="" class="gallery_four"> 
+      <img src="./src/assets/images/gallery_four.png" alt="" class="gallery_four">
       <img src="./src/assets/images/gallery_five.png" alt="" class="gallery_five">
+    </div>
+
+    <section id="time">
+      <h2 class="time_title">HORÁRIO DE FUNCIONAMENTO</h2>
+      <div class="time__text">
+        <div class="time__text1">
+          <p class="time__text1__title">HORÁRIO</p>
+          <p class="time__text1__subtitle">(Seg-sáb | 9h às 18h)
+            Feriado: Consulte a disponibilidade</p>
+        </div>
+        <img src="./src/assets/images/logo.png" alt="Logo da Expresso 1901" class="time__logo">
+        <div class="time__text2">
+          <p class="time__text1__title">ENDEREÇO</p>
+          <p class="time__text1__subtitle">
+            Rua Francisco Marengo, 1901
+            Tatuapé, São Paulo - SP,
+            03313-001</p>
+        </div>
       </div>
-      
+
+      </div>
     </section>
+
+    <section id="contact">
+      <h2 class="contact_title">CONTATO</h2>
+      <div class="contact__text">
+        <div class="contact__text1">
+          Aqui é o espaço dedicado aos nossos clientes, onde suas opiniões importam e suas perguntas serão respondidas.
+          Nossos canais de comunicação estão abertos e
+          prontos para receber você. Sinta-se à vontade para compartilhar suas sugestões ou esclarecer suas dúvidas.
+          Estamos aqui para ajudar e tornar sua experiência ainda melhor.
+        </div>
+        <div class="contact__subtitle">
+          <div class="contact__text2">
+            <img src="./src/assets/images/e-mail.png" alt="icone caixa de entrada" class="contact__img">
+            <p class="contact__email">vagasexpresso1901@outlook.com</p>
+          </div>
+          <div class="contact__text2">
+            <img src="./src/assets/images/whatsapp.png" alt=" icone de WhatsApp" class="contact__img">
+            <p class="contact__number">(11) 99817-8313</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
   </main>
 </body>

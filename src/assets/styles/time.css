@@ -1,412 +1,288 @@
-
-.gallery {
-  display: grid;
-  grid-template-areas:
-    "gallery_one gallery_three gallery_two"
-    ". gallery_three ."
-    "gallery_four gallery_three gallery_five";
-  gap: 15px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.gallery > .gallery_one {
-  grid-area: gallery_one;
-  width: 332px;
-  height: 409px;
+:root {
+    font-size: 62.5%;
 }
 
-.gallery > .gallery_two {
-  grid-area: gallery_two;
-  width: 335px;
-  height: 409px;
+#time {
+    margin-top: 15.0rem;
+    font-family: "Montserrat"; 
 }
 
-.gallery > .gallery_three {
-  grid-area: gallery_three;
-  width: 650px;
-  height: 844px;
+.time_title {
+    color: #ce8f5c;
+font-size: 3.6rem;
+font-weight: 500;
+margin-left: 13rem;
 }
 
-.gallery > .gallery_four {
-  grid-area: gallery_four;
-  width: 332px;
-  height: 409px;
+.time__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15.0rem;
+    gap: 15.5rem;
 }
 
-.gallery > .gallery_five {
-  grid-area: gallery_five;
-  width: 335px;
-  height: 409px;
+.time__text1__title {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-@media (min-width: 1920px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 15px;
-  }
+.time__text1__subtitle {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.0rem;
+    margin-top: 5.0rem;
+    width: 315px;
+    height: 173px;
+    text-align: center;
+}
 
-  .gallery > .gallery_one {
-    background-size: cover;
-      grid-area: gallery_one;
-      width: 100%;
-      height: 400px;
+@media (min-width:1920px) {
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 400px;
+    .time_title {
+        font-size: 45px;
+        margin-left: 285px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 830px;
+    .time__logo {
+       width: 430px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 400px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 150px;
+        gap: 155px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 400px;
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 26px;
+        width: 500px;
     }
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 15px;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 300px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 300px;
+    .time_title {
+        font-size: 45px;
+        margin-left: 220px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 640px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 150px;
+        gap: 155px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 300px;
-    }
+  
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 300px;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 1559px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 8px;
-    width: 100%;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
-    }
-
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
-    }
-}
-
-@media (min-width: 1281px) and (max-width: 1439px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 8px;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
-    }
-
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
-    }
-
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
-    }
+   
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 8px;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
+    .time_title {
+        font-size: 36px;
+        margin-left: 130px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 105px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
+    .time__logo {
+        margin-bottom: 50px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
+    .time__text1__title {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 15px;
     }
 }
+
 @media (min-width: 901px) and (max-width: 1024px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 8px;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
+    .time_title {
+        font-size: 36px;
+        margin-left: 130px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 75px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
+    .time__logo {
+        margin-bottom: 50px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
+    .time__text1__title {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 15px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
-  .gallery {
-    display: grid;
-    grid-template-areas:
-      "gallery_one gallery_three gallery_two"
-      ". gallery_three ."
-      "gallery_four gallery_three gallery_five";
-    gap: 5px;
-  }
-
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
+    .time_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 45px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
+    .time__logo {
+        margin-bottom: 50px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
+    .time__text1__title {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 15px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
-  .gallery {
-      display: grid;
-      grid-template-areas:
-        "gallery_one gallery_three gallery_two"
-        ". gallery_three ."
-        "gallery_four gallery_three gallery_five";
-      gap: 8px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-  .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: 250px;
+    .time_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: 250px;
+    .time__text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 25px;
     }
 
-    .gallery > .gallery_three {
-      background-size: auto;
-      grid-area: gallery_three;
-      width: 100%;
-      height: 527px;
+    .time__logo {
+        margin-bottom: 50px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: 250px;
+    .time__text1__title {
+        margin-top: 25px;
+        font-size: 20px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: 250px;
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-      .gallery {
-          grid-template-areas:
-            "gallery_one gallery_two"
-            " gallery_four gallery_three gallery_five";
-          grid-template-columns: 2, 1fr;
-          grid-template-rows: repeat(4, 85px);
-          gap: 15px;
+    #time {
+        display: flex;
+        flex-direction: column;
     }
 
-    .gallery > .gallery_one {
-      grid-area: gallery_one;
-      width: 100%;
-      height: auto;
+    .time_title {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 35px;
     }
 
-    .gallery > .gallery_two {
-      grid-area: gallery_two;
-      width: 100%;
-      height: auto;
+    .time__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 5px;
     }
 
-    .gallery > .gallery_three {
-      grid-area: gallery_three;
-      margin-top: 95px;
-      width: 100%;
-      height: auto;
+    .time__logo {
+        margin-bottom: 50px;
     }
 
-    .gallery > .gallery_four {
-      grid-area: gallery_four;
-      width: 100%;
-      height: auto;
+    .time__text1__title {
+        margin-top: 25px;
+        font-size: 20px;
     }
 
-    .gallery > .gallery_five {
-      grid-area: gallery_five;
-      width: 100%;
-      height: auto;
+    .time__text1__subtitle {
+        width: 200px;
+        margin-top: 10px;
+        font-size: 18px;
     }
 }

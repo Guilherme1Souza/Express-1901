@@ -166,7 +166,7 @@ h2 {
   .work__text1 {
     margin-left: 220px;
     width: 820px;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .work__hero__img {
@@ -215,10 +215,6 @@ h2 {
   }
 
 }
-
-@media (min-width: 1025px) and (max-width: 1280px) {
- 
-}  
 
 @media (min-width: 901px) and (max-width: 1024px) {
   .work__text1 {
