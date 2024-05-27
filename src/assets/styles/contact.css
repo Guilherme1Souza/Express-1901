@@ -7,6 +7,10 @@
   font-size: 62.5%;
 }
 
+#contact {
+  margin-top: 155px;
+}
+
 .contact_title {
     color: #CE8F5C;
     font-family: "Montserrat";
@@ -322,7 +326,6 @@
         font-size: 12px;
         font-weight: 300;
         margin-top: 15px;
-        
+        text-decoration: none;
       }
-      
 }

@@ -22,14 +22,15 @@
   <link rel="stylesheet" href="./src/assets/styles/menu.css" />
   <link rel="stylesheet" href="./src/assets/styles/work.css" />
   <link rel="stylesheet" href="./src/assets/styles/time.css" />
-  <link rel="stylesheet" href="./src/assets/styles/gallery.css">
-  <link rel="stylesheet" href="./src/assets/styles/contact.css">
+  <link rel="stylesheet" href="./src/assets/styles/gallery.css" />
+  <link rel="stylesheet" href="./src/assets/styles/contact.css" />
+  <link rel="stylesheet" href="./src/assets/styles/footer.css" />
 
   <script src="./js/script.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
+  <header id="header">
     <nav class="header__nav">
       <img src="./src/assets/images/logo.png" alt="Logo da Expresso 1901" class="header__nav__img" />
       <button class="hamburguer"></button>
@@ -118,18 +119,18 @@
         <i id="left" class="fa-solid fa-angle-left"></i>
         <div class="carousel">
           <img src="./src/assets/images/salgados.png" onclick="mostrarCategoria('salgados')" class="image-item"
-            alt="Imagem 1" draggable="false" />
-          <img src="./src/assets/images/doces.png" onclick="mostrarCategoria('doces')" class="image-item" alt="Imagem 2"
+            alt="Imagem de um salgado frito" draggable="false" />
+          <img src="./src/assets/images/doces.png" onclick="mostrarCategoria('doces')" class="image-item" alt="Imagem de um doce"
             draggable="false">
-          <img src="./src/assets/images/bebidas.png" onclick="mostrarCategoria('cafés')" class="image-item"
+          <img src="./src/assets/images/bebidas.png" onclick="mostrarCategoria('cafés')" class="imagem de um café"
             alt="Imagem 3" draggable="false">
-          <img src="./src/assets/images/açai.png" onclick="mostrarCategoria('açai')" class="image-item" alt="Imagem 4"
+          <img src="./src/assets/images/açai.png" onclick="mostrarCategoria('açai')" class="image-item" alt="Imagem de um açai"
             draggable="false">
-          <img src="./src/assets/images/crepes.png" onclick="mostrarCategoria('crepes')" class="image-item"
+          <img src="./src/assets/images/crepes.png" onclick="mostrarCategoria('crepes')" class="imagem de um crepe"
             alt="Imagem 5" draggable="false">
-          <img src="./src/assets/images/almoço.png" onclick="mostrarCategoria('almoços')" class="image-item"
+          <img src="./src/assets/images/almoço.png" onclick="mostrarCategoria('almoços')" class="imagem de uma salada"
             alt="Imagem 6" draggable="false">
-          <img src="./src/assets/images/bebidas_2.png" onclick="mostrarCategoria('bebidas')" class="image-item"
+          <img src="./src/assets/images/bebidas_2.png" onclick="mostrarCategoria('bebidas')" class="imagem de um suco"
             alt="Imagem 6" draggable="false">
           <div class="categoria">
             <p class="categoria2" onclick="mostrarCategoria('salgados')">Salgados </p>
@@ -991,12 +992,50 @@
             <p class="contact__number">(11) 99817-8313</p>
           </div>
         </div>
-
       </div>
     </section>
-
-
   </main>
+  <footer>
+    <div class="footer__text">
+      <div class="footer_text1">
+        <p class="footer_title">WhatsApp:</p>
+        <p class="footer_subtitle">(11) 99817-8313</p>
+        <p class="footer_title">E-mail:</p>
+        <p class="footer_subtitle">vagasexpresso1901@outlook.com</p>
+        <p class="footer_title">Endereço:</p>
+        <p class="footer_subtitle">Rua Francisco Marengo, 1901
+          Tatuapé, São Paulo - SP,
+           03313-001</p>
+      </div>
+      <div class="footer_text2">
+        <p class="footer_title">Acesso rápido:</p>
+        <a href="#header" class="footer_subtitle">Início</a>
+        <a href="#about" class="footer_subtitle">Quem somos</a>
+        <a href="#menu" class="footer_subtitle">Cardápio</a>
+        <a href="#work" class="footer_subtitle">Trabalhe conosco</a>
+        <a href="#time" class="footer_subtitle">Horário de funcionamento</a>
+        <a href="#contact" class="footer_subtitle">Contato</a>
+      </div>
+      <div class="footer_text3">
+        <p class="footer_title">Siga-nos nas</p>
+        <p class="footer_subtitle2">nossas redes sociais:</p>
+        <a href="https://www.instagram.com/expresso_1901?igsh=dHQ2Z3kxaDM2YWhm">
+          <img src="./src/assets/images/instagram.png" alt="icone de Instagram" class="footer__img"></a>
+        </a>
+        <p class="footer_title">Formas de pagamento</p>
+        <p class="footer_subtitle">Crédito/débito:</p>
+        <img src="./src/assets/images/icons8-mastercard-96 1.png" alt="" class="card">
+        <img src="./src/assets/images/icons8-visa-96 1.png" alt="" class="card">
+        <img src="./src/assets/images/icons8-amex-96 1.png" alt="" class="card">
+        <img src="./src/assets/images/icons-elo 1.png" alt="" class="card">
+        <p class="footer_subtitle">Vale-refeição:</p>
+        <img src="./src/assets/images/alelo-removebg-preview 1.png" alt="" class="card">
+        <img src="./src/assets/images/vr-logo-9C61286876-seeklogo 2.png" alt="" class="card">
+        <img src="./src/assets/images/sodexo 1.png" alt="" class="card">
+        <img src="./src/assets/images/ticket-removebg-preview 1.png" alt="" class="card"> 
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
