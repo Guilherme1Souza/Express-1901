@@ -168,7 +168,6 @@ input {
   #about {
     display: flex;
     margin-top: 900px;
-    font-family: "Montserrat";
     padding-left: 150px;
     line-height: 40px;
   }
@@ -201,7 +200,6 @@ input {
     display: flex;
     margin-top: 800px;
     margin-left: 200px;
-    font-family: "Montserrat";
   }
 
   .about_title {
@@ -231,7 +229,6 @@ input {
   #about {
     display: flex;
     margin-top: 630px;
-    font-family: "Montserrat";
   }
 
   .about_title {
@@ -260,7 +257,6 @@ input {
   #about {
     display: flex;
     margin-top: 600px;
-    font-family: "Montserrat";
   }
 
   #about,
@@ -286,7 +282,6 @@ input {
   #about {
     display: flex;
     margin-top: 470px;
-    font-family: "Montserrat";
   }
 
   #about,
@@ -325,7 +320,6 @@ input {
   }
 }
 
-
 @media (min-width: 769px) and (max-width: 900px) {
   
   #about,
@@ -337,7 +331,6 @@ input {
   #about {
     display: flex;
     margin-top: 400px;
-    font-family: "Montserrat";
     
   }
 

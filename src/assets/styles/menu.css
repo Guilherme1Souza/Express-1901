@@ -988,7 +988,6 @@ p.descrition {
 
         .valor {
             margin-right: 30px;
-            
         }
 
         .valor2 {
@@ -1069,11 +1068,7 @@ p.descrition {
 }
 
 .description {
-    margin-top: 10px;
-    color: #000;
-    font-family: "Open Sans";
     font-size: 15px;
-    font-weight: 400;
 }
 
 .description__two1 {
@@ -1096,7 +1091,6 @@ p.descrition {
 .valor {
     margin-right: 30px;
     font-size: 12px;
-    
 }
 
 .valor2 {
@@ -1121,7 +1115,6 @@ p.descrition {
 .categoria2:nth-child(7) {
     margin-left: -6px;  
 }
-
 
 .observation {
     margin-left: 15px;

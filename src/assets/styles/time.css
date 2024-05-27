@@ -146,6 +146,7 @@ margin-left: 13rem;
     #time {
         display: flex;
         flex-direction: column;
+        margin-top: 230px;
     }
 
     .time_title {

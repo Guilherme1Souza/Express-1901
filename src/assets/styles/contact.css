@@ -60,7 +60,7 @@
   padding-left: 1.5rem;
   font-size: 2.4rem;
   font-weight: 300;
-  text-decoration-line: underline;
+  margin-top: 25px;
 }
 
 .contact__number {
@@ -69,6 +69,7 @@
   font-size: 2.4rem;
   font-weight: 300;
   padding-left: 1.5rem;
+  margin-top: 25px;
 }
 
 @media (min-width: 1920px) {
@@ -104,6 +105,11 @@
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {
+    #contact {
+      margin-top: 350px;
+      margin-bottom: 200px;
+    }
+  
     .contact_title {
         font-size: 45px;
         margin-left: 220px;
@@ -114,13 +120,37 @@
       .contact__text {
         display: flex;
         padding: 30px;
-        margin-left: 220px;
+        margin-left: 110px;
         justify-content: space-around;
+      }
+
+      .contact__text1 {
+        margin-top: 40px;
       }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px)  {
+  
+  .contact__text1 {
+    font-size: 15px;
+  }
+
+  .contact__email {
+    font-size: 15px;
+    margin-top: 35px;
+  }
+  
+  .contact__number {
+    font-size: 15px;
+    margin-top: 35px;
+  }
+}
+
 @media (min-width: 901px) and (max-width: 1024px) {
-    .contact__text {
+    #contact {
+      margin-top: 180px;
+    }  
+     .contact__text {
         display: flex;
         flex-direction: column;
         padding: 30px;
@@ -156,13 +186,16 @@
         color: #000;
         text-align: center;
         font-weight: 300;
-        text-decoration-line: underline;
+        font-size: 18px;
+        margin-top: 35px;
       }
       
       .contact__number {
+        font-size: 18px;
         color: #000;
         text-align: center;
         font-weight: 300;
+        margin-top: 35px;
       }
 }
 
@@ -208,8 +241,7 @@
         text-align: center;
         font-size: 18px;
         font-weight: 300;
-        text-decoration-line: underline;
-        margin-top: 15px;
+        margin-top: 35px;
       }
       
       .contact__number {
@@ -217,7 +249,7 @@
         text-align: center;
         font-size: 18px;
         font-weight: 300;
-        margin-top: 15px;
+        margin-top: 35px;
         
       }
 }
@@ -264,8 +296,7 @@
         text-align: center;
         font-size: 18px;
         font-weight: 300;
-        text-decoration-line: underline;
-        margin-top: 15px;
+        margin-top: 35px;
       }
       
       .contact__number {
@@ -273,7 +304,7 @@
         text-align: center;
         font-size: 18px;
         font-weight: 300;
-        margin-top: 15px;
+        margin-top: 35px;
         
       }
 }
@@ -314,18 +345,17 @@
       .contact__email {
         color: #000;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 300;
-        text-decoration-line: underline;
-        margin-top: 15px;
+        margin-top: 35px;
       }
       
       .contact__number {
         color: #000;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 300;
-        margin-top: 15px;
+        margin-top: 35px;
         text-decoration: none;
       }
 }
