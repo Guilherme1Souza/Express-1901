@@ -73,6 +73,13 @@
     font-size: 14px;
     width: 100%
   }
+
+  .rights__name {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 18px;
+    margin-left: 5px;
+   }
 }
 
 @media (min-width: 1920px) {
@@ -296,7 +303,16 @@
   }
 
   .rights {
-    font-size: 9px;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
   }
+
+  .rights__name {
+    color: #000;
+    text-decoration: none;
+    margin-left: 2px;
+   }
+ 
 
 }
