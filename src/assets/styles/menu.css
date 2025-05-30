@@ -166,6 +166,14 @@
     background-color: #cecece;
 }
 
+.line_two {
+    margin-top: 5px;
+    margin-left: 150px;
+    height: 2px;
+    width: 77%;
+    background-color: #cecece;
+}
+
 p.title {
     color: #CE8F5C;
     font-family: "Montserrat";
@@ -296,6 +304,11 @@ p.descrition {
 
     .observation {
         margin-left: 450px;
+    }
+
+    .line_two {
+        width: 82%;
+        margin-left: 155px;
     }
   }
 
@@ -689,6 +702,11 @@ p.descrition {
     .observation {
         margin-left: 250px;
     }
+
+    .line_two {
+        width: 77%;
+        margin-left: 105px;
+    }
   }  
 
   @media (min-width: 901px) and (max-width: 1024px) {
@@ -785,6 +803,11 @@ p.descrition {
         float: right;
         margin-right: -25px;
         font-size: 15px;
+    }
+
+    .line_two {
+        width: 72%;
+        margin-left: 55px;
     }
   }
 
@@ -886,6 +909,11 @@ p.descrition {
         color: #000;
         float: right;
         font-size: 15px;
+    }
+
+    .line_two {
+        width: 60%;
+        margin-left: 85px;
     }
 }
 
@@ -998,7 +1026,12 @@ p.descrition {
         }
     
         .observation {
-            margin-left: 150px;
+            margin-left: 0px;
+        }
+
+        .line_two {
+            width: 100%;
+            margin-left: -20px;
         }
     }
 
@@ -1093,6 +1126,11 @@ p.descrition {
     font-size: 12px;
 }
 
+.line_two {
+    width: 100%;
+    margin-left: -20px;
+}
+
 .valor2 {
     color: #000;
     float: right;
@@ -1117,7 +1155,8 @@ p.descrition {
 }
 
 .observation {
-    margin-left: 15px;
+    width: 200px;
+    margin-left: -0px;
     font-size: 10px;
 }
 

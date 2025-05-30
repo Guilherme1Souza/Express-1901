@@ -69,9 +69,16 @@
     align-items: center;
     background: #eea468;  
     font-family: "Montserrat";
-    height: 25px;
+    height: 40px;
     font-size: 14px;
     width: 100%
+  }
+
+  .name_a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    margin-left: 5px;
   }
 }
 
@@ -296,7 +303,12 @@
   }
 
   .rights {
-    font-size: 9px;
+    font-size: 7.5px;
+  }
+
+  .name_a {
+    font-size: 7.5px;
+    
   }
 
 }
