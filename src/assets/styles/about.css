@@ -120,6 +120,24 @@ input {
     margin-left: -68%;
 }
 
+.button_wpp {
+  position: fixed;
+  background-color: transparent;
+  bottom: 20px;
+  right: 35px;
+  z-index: 1000
+}
+
+.button_wpp img {
+  width: 40px;
+  height: 40px;
+  animation: pulse 1s infinite
+}
+
+.button_wpp a {
+  display: block
+}
+
 @media (max-width: 768px) {
   #about {
     max-width: 320px;
@@ -400,4 +418,8 @@ input {
   .slides_nav {
     display: none;
   }
+
+  
 }
+
+
